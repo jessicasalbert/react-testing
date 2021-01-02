@@ -11,7 +11,7 @@ function App() {
       data-test='counter-display'>The count is currently&nbsp;
         <span data-test="count">{count}</span>
       </h1>
-      <button data-test='increment-button'>Increment counter</button>
+      <button onClick={ () => setCount(count + 1)} data-test='increment-button'>Increment counter</button>
     </div>
   );
 }
